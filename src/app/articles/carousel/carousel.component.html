@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="row__inner">
+    <div class="tile" *ngFor="let photo of photos">
+      <div class="tile__media">
+        <cl-image
+          public-id="{{photo.publicId}}"
+          class="tile__img"
+          fetchFormat="auto"
+          quality="100"
+          dpr="auto"
+          width="250"
+          background="auto"
+          crop="fill_pad"
+          loading="lazy"
+          gravity="auto"
+        ></cl-image>
+      </div>
+      <div class="tile__details">
+        <div class="tile__title">
+          {{ photo.title }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

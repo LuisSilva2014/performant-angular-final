@@ -44,3 +44,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+*.ext
+*.csr
+*.pem
+*.key
+*.cnf
+*.srl
+*.crt
+.vscode/
